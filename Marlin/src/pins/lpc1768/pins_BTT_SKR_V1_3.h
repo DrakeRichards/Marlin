@@ -225,6 +225,25 @@
     #define LCD_PINS_ENABLE P1_23
     #define LCD_PINS_D4    P1_21
 
+  #elif ENABLED(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
+
+    #define LCD_PINS_ENABLE P1_18
+    #define LCD_PINS_RS     P1_30
+    #define LCD_PINS_D4     P1_20
+
+    #define BTN_EN1         P1_19
+    #define BTN_EN2         P0_28
+    #define BTN_ENC         P1_21
+    
+    #ifdef BEEPER_PIN
+        #undef BEEPER_PIN
+    #endif
+    #define BEEPER_PIN      P1_23
+    #ifdef KILL_PIN
+      #undef KILL_PIN
+    #endif
+    #define KILL_PIN        P1_22
+
   #else // !CR10_STOCKDISPLAY
 
     #define LCD_PINS_RS    P1_19
