@@ -231,8 +231,8 @@
     #define LCD_PINS_RS     P1_30
     #define LCD_PINS_D4     P1_20
 
-    #define BTN_EN1         P1_19
-    #define BTN_EN2         P0_28
+    #define BTN_EN1         P0_28
+    #define BTN_EN2         P1_19
     #define BTN_ENC         P1_21
     
     #ifdef BEEPER_PIN
